@@ -1,5 +1,11 @@
 package com.example.service;
 
-public interface BookService {
+import java.util.List;
 
+import com.example.model.Book;
+
+public interface BookService {
+    List<Book> getAllBooks();
+
+    void addBook(Book book);
 }
